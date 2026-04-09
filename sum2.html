@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Pendaftaran Siswa</title>
+
+    
+</head>
+<body>
+
+<link rel="stylesheet" href="sum2.css">
+<script src="event input.js"></script>
+<div class="container">
+    <h1>FORM PENDAFTARAN SISWA</h1>
+    
+
+    <form id="formPendaftaran">
+        
+
+        <div class="form-group">
+            <label>Nama Lengkap:</label>
+            <input type="text" id="nama" placeholder="Contoh: Muhammad Raihan">
+            <p class="small-text">*Silakan isi nama lengkap Anda</p>
+            <p class="error" id="errorNama">Nama tidak boleh kosong!</p>
+        </div>
+        
+  
+        <div class="form-group">
+            <label>Kelas:</label>
+            <input type="text" id="kelas" placeholder="Contoh: XII IPA 2 / 11A / 7B">
+            <p class="small-text">*Contoh: XII IPA 2, 11A, 7B</p>
+            <p class="error" id="errorKelas">Kelas tidak boleh kosong!</p>
+        </div>
+        
+
+        <div class="form-group">
+            <label>Pilih Ekstrakurikuler:</label>
+            <div class="checkbox-group">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="basket" name="kegiatan" value="Basket">
+                    <label for="basket" style="display: inline; font-weight: normal;">Basket</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="futsal" name="kegiatan" value="Futsal">
+                    <label for="futsal" style="display: inline; font-weight: normal;">Futsal</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="paduanSuara" name="kegiatan" value="Paduan Suara">
+                    <label for="paduanSuara" style="display: inline; font-weight: normal;">Paduan Suara</label>
+                </div>
+            </div>
+            <p class="small-text">*Pilih minimal 1 kegiatan</p>
+            <p class="error" id="errorKegiatan">Harus pilih minimal 1 kegiatan!</p>
+        </div>
+        
+     
+        <div class="form-group">
+            <label>Pilih Waktu Belajar:</label>
+            <div class="radio-group">
+                <div class="radio-item">
+                    <input type="radio" id="pagi" name="waktu" value="Pagi">
+                    <label for="pagi" style="display: inline; font-weight: normal;">Pagi (07:00 - 12:00)</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="siang" name="waktu" value="Siang">
+                    <label for="siang" style="display: inline; font-weight: normal;">Siang (12:30 - 17:00)</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="sore" name="waktu" value="Sore">
+                    <label for="sore" style="display: inline; font-weight: normal;">Sore (17:30 - 20:30)</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="campuran" name="waktu" value="Campuran">
+                    <label for="campuran" style="display: inline; font-weight: normal;">Campuran (Fleksibel)</label>
+                </div>
+            </div>
+            <p class="small-text">*Pilih salah satu waktu belajar</p>
+            <p class="error" id="errorWaktu">Harus pilih waktu belajar!</p>
+        </div>
+
+        <div class="button-group">
+            <button type="button" class="btn-daftar" onclick="daftarSekarang()">Daftar Sekarang</button>
+            <button type="button" class="btn-reset" onclick="resetForm()">Reset Form</button>
+        </div>
+        
+    </form>
+    
+
+    <div id="hasil">
+        <h2>PENDAFTARAN BERHASIL</h2>
+        <p><strong>Nama:</strong> <span id="hasilNama"></span></p>
+        <p><strong>Kelas:</strong> <span id="hasilKelas"></span></p>
+        <p><strong>Kegiatan:</strong> <span id="hasilKegiatan"></span></p>
+        <p><strong>Waktu Belajar:</strong> <span id="hasilWaktu"></span></p>
+        <p style="color: #81c784; margin-top: 10px; text-align: center;">*Anda sudah terdaftar!</p>
+    </div>
+    
+</div>
+
+
+
+
+</body>
+</html>

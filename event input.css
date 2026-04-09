@@ -1,0 +1,18 @@
+body {
+	text-align: center;
+	font-family:'Comic Sans Ma',cursive;
+	background: #blue;
+	margin: 0;
+}
+.container {
+	max-width: 900px;
+	margin: auto;
+	paddintg: 25px;
+	text-align: center;
+	background-color: #blue;
+}
+button {
+	padding: 10px 20px;
+	margin: 10px;
+	align-items: center;
+}
